@@ -13,8 +13,10 @@ public class PruebaVehiculos {
 		Microbuses micro=new Microbuses("2321 BGF",22);
 		Furgonetas furgo=new Furgonetas("3456-rtf",3.5);
 		Camiones camion=new Camiones("B-0000-A",20);
+		
 		//Los insertamos en un array de objetos de tipo Vehiculos que servira de contenedor polimórfico
 		ArrayList<Vehiculos> vehiculos=new ArrayList<Vehiculos>(Arrays.asList(coche,micro,furgo,camion));
+		
 		//Recorremos el Array de Vehículos y pedimos al usuario un numero de dias de alquiler
 		// para mostrar el coste.
 		Scanner teclado=new Scanner(System.in);
@@ -31,9 +33,7 @@ public class PruebaVehiculos {
 				System.out.println();
 			}
 		}
+		//Cerramos recurso.
 		teclado.close();
-		
-		
 	}
-
 }
