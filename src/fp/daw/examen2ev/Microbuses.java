@@ -10,7 +10,9 @@ public class Microbuses extends TransportePersonas{
 		pPorPlazaYDia=2;
 	}
 	public void setPPorPlazaYDia(double precio) {this.pPorPlazaYDia=precio;}
+	
 	public double getPPorPlazaYDia() {return pPorPlazaYDia;}
+	
 	public String toString() {
 		return "Tipo de Vehículo: Microbús, "+super.toString();
 	}
